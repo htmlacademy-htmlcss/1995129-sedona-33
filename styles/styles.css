@@ -1,0 +1,148 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+  }
+
+  body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color:#000000;
+    background-color: #ffffff;
+  }
+
+  .navigation-link {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
+    background-color: #ffffff;
+    text-decoration: none;
+  }
+
+  .welcome-slogan {
+    width: 1200px;
+    height: 485px;
+    text-align: center;
+    background-image: url("../images/divider.svg"), url("../images/index-background.jpg");
+    background-size: 100% auto, 100% auto;
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom, top;
+  }
+  
+  .welcome-text {
+      width: 1200px;
+      height: 57px;
+      text-align: center;
+  }
+
+  .welcome-intro {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    background-color: #ffffff;
+    text-decoration: none;
+  }
+
+ .advantages-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.advantages-discription {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+}
+
+  .advantages-item:nth-child(even) {
+      color: black;
+      background-color: rgba(131, 179, 211, 0.12)
+  }
+
+  .advantages-item:first-child {
+      color: white;
+      background-color: rgba(131, 179, 211, 1);
+  }
+
+  .advantages-item:nth-child(5) {
+    color: white;
+    background-color: rgba(131, 179, 211, 1);
+  }
+
+  .advantages-item:nth-child(3) {
+      color: black;
+      background-color: rgba(255, 255, 255, 1);
+
+  }
+
+  .advantages-item:nth-child(7) {
+      color: black;
+      background-color: rgba(131, 179, 211, 0.2);
+  }
+
+  .appointment {
+      text-align: center;
+  }
+
+  .appointment-title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  .appointment-section-link {
+    color: white;
+    background-color: rgba(117, 98, 87, 1);
+    text-transform: uppercase;
+}
+
+  .newsletter {
+      color: white;
+      background-image: url("../images/background.jpg");
+      text-align: center;
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+
+  .newsletter-title {
+      color: white;
+      text-transform: uppercase;
+  }
+
+  .newsletter-button {
+      font-size: 20px;
+      line-height: 26px;
+      font-weight: bold;
+      text-align: center;
+      color: rgba(255, 255, 255, 1);
+      background-color: rgba(131, 179, 211, 1);
+      text-decoration: none;
+      text-transform: uppercase;
+  }
+
+  .contacts-phone {
+      font-size: 40px;
+      line-height: 40px;
+      color: black;
+  }
