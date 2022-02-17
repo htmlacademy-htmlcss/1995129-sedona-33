@@ -40,6 +40,11 @@
     overflow: hidden;
   }
 
+  .reset-list {
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+  }
 
   .main-container {
     flex-grow: 1;
@@ -54,10 +59,7 @@
   .navigation-list {
     display: flex;
     flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
     width: 455px;
-    list-style-type: none;
   }
 
   .navigation-user {
@@ -149,10 +151,7 @@
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
-   margin: 0;
-   padding: 0;
    text-align: center;
-   list-style-type: none;
   }
 
   .advantages-item {
@@ -184,7 +183,6 @@
    text-transform: uppercase;
    padding-top: 97px;
 }
-
 
 .advantages-discription-number {
    padding-bottom: 30px;
@@ -370,9 +368,6 @@
   .footer-social-list {
    display: flex;
    flex-wrap: wrap;
-   margin: 0;
-   padding: 0;
-   list-style-type: none;
   }
 
   .footer-social-item {
@@ -425,9 +420,6 @@
 
   .breadcrumbs {
    display: flex;
-   margin: 0;
-   padding: 0;
-   list-style-type: none;
   }
 
   .bread-crumbs-item {
@@ -462,10 +454,7 @@
    flex-wrap: wrap;
    width: 1058px;
    height: 1040px;
-   display: flex;
    margin-left: 70px;
-   padding: 0;
-   list-style-type: none;
    }
 
    .hotel-card {
@@ -483,14 +472,12 @@
    width: 620px;
    height: 60px;
    margin-left: 289px;
-
    text-align: center;
   }
+
   .pagination {
    display: flex;
    margin: 60px;
-   padding: 0;
-   list-style-type: none;
   }
 
   .pagination-link {
