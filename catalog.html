@@ -7,8 +7,8 @@
 </head>
 <body>
 <header class="page-header">
-    <img class="page-header-logo" src="images/logo.svg" width="139" height="70" alt="Герб города Седона">
     <nav class="navigation">
+       <img class="page-header-logo" src="images/logo.svg" alt="Герб города Седона">
         <ul class="navigation-list">
             <li class="navigation-item">
                 <a class="navigation-link"  href="main-page.html">Главная</a>
@@ -27,17 +27,17 @@
                 </a>
             </li>
             <li class="navigation-item">
-                <a class="navigation-link"  href="#">
-                    <span class="visually-hidden">Избранное</span>
-                </a>
-            </li>
-            <li class="navigation-item">
-                <a class="navigation-link info-link"  href="#">Хочу сюда!</a>
-            </li>
-        </ul>
-    </nav>
+              <a class="navigation-link"  href="#">
+                <span class="visually-hidden">Избранное</span>
+            </a>
+        </li>
+        <li class="navigation-item">
+            <a class="navigation-link info-link"  href="#">Хочу сюда!</a>
+        </li>
+    </ul>
+</nav>
 </header>
-<main class=" inner-container inner-page">
+<main class="inner-container inner-page">
   <div class="page-container">
     <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -102,19 +102,25 @@
      </form>
     </header>
    <section class="catalog-hotels">
-       <h2 class="catalog-sorting">Найдено гостиниц</h2>
+       <div class="sorting-field">
+        <h2 class="catalog-sorting">Найдено гостиниц</h2>
        <select class="select-control" aria-label="Сортировка">
         <option value="popular">Сначала популярное</option>
         <option value="cheap">Сначала дешёвое</option>
         <option value="expensive">Сначала дорогое</option>
       </select>
+      </div>
+      <div class="items-view">
       <a href="#" class="button button-light">
         <span class="visually-hidden">Показать список</span>
       </a>
       <a class="button" href="#">
         <span class="visually-hidden">Показать карточки</span>
       </a>
-      <a class="button" href="#">Показать на всю страницу</a>
+      <a class="button" href="#">
+        <span class="visually-hidden">Показать на всю страницу</span>
+        </a>
+      </div>
       <ul class="hotels-list">
           <li class="hotel-card">
               <a class="hotel-card-link" href="#">
@@ -161,14 +167,14 @@
                 <p class="hotel-rate">Рейтинг:9,2</p>
         </li>
       </ul>
-      <button class="button-submit" type="submit">Загрузить ещё</button>
+      <button class="button-submit button-pagination" type="submit">Загрузить ещё</button>
       <ul class="pagination">
-      <li class="pagination-item">
-              <a class="pagination-link pagination-current">1</a>
-          </li>
-          <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
-          </li>
+       <li class="pagination-item">
+           <a class="pagination-link pagination-current">1</a>
+       </li>
+       <li class="pagination-item">
+          <a class="pagination-link" href="#">2</a>
+       </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">3</a>
         </li>
@@ -181,14 +187,18 @@
         <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
         </li>
+       <li class="pagination-item">
+         <section class="hotels-showing">
+        <p><i>Гостиниц на странице</i></p>
+        <select name="hotels-number">
+            <option value="4">4</option>
+            <option value="3">3</option>
+            <option value="2">2</option>
+            <option value="1">1</option>
+        </select>
+        </section>
+       </li>
       </ul>
-      <p><i>Гостиниц на странице</i></p>
-      <select name="hotels-number">
-          <option value="4">4</option>
-          <option value="3">3</option>
-          <option value="2">2</option>
-          <option value="1">1</option>
-      </select>
       </section>
     <section class="newsletter-catalog">
         <h2 class="newsletter-title-catalog">Подпишитесь на рассылку</h2>
