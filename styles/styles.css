@@ -52,7 +52,7 @@
 
   .navigation {
     display: flex;
-    width: 1060px;
+    width: 1200px;
     margin: 0 auto;
   }
 
@@ -64,15 +64,23 @@
 
   .navigation-user {
     width: 374px;
-    margin-left: auto;
+    padding-left: 282px;
   }
 
+  .navigation-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
   .navigation-user .navigation-link {
     min-width: 16px;
     min-height: 22px;
   }
 
   .navigation-link {
+   position: relative;
    display: block;
    font-weight: 700;
    font-style: normal;
@@ -85,13 +93,17 @@
    padding: 17px 20px;
   }
 
-  .info-link {
+   .info-link {
    font-size: 16px;
    font-weight: 700;
-   line-height: 20.72px;
+   line-height: 20.7px;
    color: white;
    background-color:rgba(117, 98, 87, 1);
    text-transform: uppercase;
+   margin-left: 32px;
+   border-radius: 4px;
+   width: 160px;
+   padding: 9px 5px 9px 5px;
   }
 
   .button {
@@ -188,7 +200,7 @@
    padding-bottom: 30px;
 }
 
-.advantages-description {
+  .advantages-description {
    margin: 0;
    padding-bottom: 87px;
    font-weight: normal;
@@ -300,6 +312,8 @@
    background-color: rgba(117, 98, 87, 1);
    text-transform: uppercase;
    text-decoration: none;
+   padding: 15px 100px 15px 100px;
+   border-radius: 10px;
   }
 
  .newsletter-title-catalog {
@@ -357,45 +371,58 @@
    display: flex;
    width: 1200px;
    margin: 0 auto;
-   padding: 40px;
   }
 
   .footer-social {
-   max-width: 107px;
-   margin-right: 61px;
+    margin-left: 72px;
+    max-width: 720px;
   }
 
   .footer-social-list {
    display: flex;
    flex-wrap: wrap;
+   margin-top: 49px;
+
   }
 
   .footer-social-item {
-   width: 20px;
-   height: 16px;
+   position: relative;
    margin-right: 29px;
    margin-bottom: 55px;
   }
 
-   .contacts-phone {
+  .button-social-icon {
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   margin: auto;
+  }
+
+  .contacts {
+   width: 720px;
+   height: 40px;
+   margin-right: 60px;
+   margin-left: 55px;
+   margin-top: 40px;
+  }
+
+  .contacts-phone {
    font-size: 40px;
    line-height: 40px;
    max-width: 720px;
    color: black;
    text-align: center;
    text-decoration: none;
-  }
-
-   .contacts {
-   margin-left: 240px;
-   width: 720px;
-   height: 40px;
+   margin-left: 200px;
   }
 
    .about-text {
    max-width: 115px;
    margin-left: auto;
    margin-right: 72px;
+   margin-top: 45px;
   }
 
    .inner-header {
@@ -457,15 +484,6 @@
    margin-bottom: 34px;
    }
 
-   /*.hotels-list {
-   display: flex;
-   flex-wrap: wrap;
-   width: 1058px;
-   height: 1040px;
-   margin-left: 70px;
-   }
-   */
-
    .hotel-card {
    margin-right: 10px;
    padding: 20px;
@@ -508,11 +526,69 @@
   }
 
   .pagination-item:not(:last-child) {
-    margin-right: 7px;
+   margin-right: 7px;
   }
 
-.hotels-showing {
+  .hotels-showing {
    width: 386px;
    height: 48px;
    margin-left: 301px;
+}
+
+.navigation-link:hover {
+   color: rgba(117, 98, 87, 1);
+}
+
+.navigation-link:hover .navigation-icon {
+  fill:rgba(117, 98, 87, 1);
+}
+
+.info-link:hover {
+   color: white;
+   background-color: rgba(97, 80, 72, 1);
+}
+
+.info-link:focus {
+   border: 3px solid #83B3D3;
+   color: white;
+   background-color: rgba(97, 80, 72, 1);
+}
+
+.appointment-section-link:hover {
+   color: white;
+   background-color: rgba(97, 80, 72, 1);
+}
+
+.appointment-section-link:focus {
+   border: 3px solid #83B3D3;
+   color: white;
+   background-color: rgba(97, 80, 72, 1);
+}
+
+.button-social-icon:hover {
+   fill: rgba(104, 162, 202, 1);
+}
+
+.button-social-icon:focus {
+   fill: rgba(104, 162, 202, 1);
+   border: 3px solid rgba(104, 162, 202, 1);
+   border-radius: 10px;
+}
+
+.contacts-phone:hover {
+   color: rgba(117, 98, 87, 1);
+}
+
+.contacts-phone:focus {
+   color: rgba(117, 98, 87, 1);
+   border: 3px solid rgba(104, 162, 202, 1);
+}
+
+.about-text:hover .about-logo {
+   fill: rgba(117, 98, 87, 1);
+}
+
+.about-text:focus .about-logo {
+   fill: rgba(117, 98, 87, 1);
+   border: 3px solid rgba(104, 162, 202, 1);
 }
