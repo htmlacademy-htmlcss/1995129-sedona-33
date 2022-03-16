@@ -30,14 +30,14 @@
   }
 
   .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   padding: 0;
+   border: 0;
+   clip: rect(0 0 0 0);
+   overflow: hidden;
   }
 
   .reset-list {
@@ -47,28 +47,28 @@
   }
 
   .main-container {
-    flex-grow: 1;
+   flex-grow: 1;
   }
 
   .navigation {
-    display: flex;
-    width: 1200px;
-    margin: 0 auto;
+   display: flex;
+   width: 1200px;
+   margin: 0 auto;
   }
 
   .navigation-list {
-    display: flex;
-    flex-wrap: wrap;
-    width: 455px;
+   display: flex;
+   flex-wrap: wrap;
+   width: 455px;
   }
 
   .navigation-icon {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    margin-top: 24px;
-    margin-right: 22px;
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   margin-top: 24px;
+   margin-right: 22px;
   }
 
   .navigation-link {
@@ -87,8 +87,8 @@
   }
 
   .navigation-user {
-    width: 374px;
-    margin-left: 325px;
+   width: 374px;
+   margin-left: 325px;
   }
 
    .info-link {
@@ -106,8 +106,8 @@
   }
 
   .page-header-logo {
-    margin-left: 70px;
-    margin-right: 40px;
+   margin-left: 70px;
+   margin-right: 40px;
   }
 
   .button {
@@ -116,14 +116,14 @@
   }
 
   .page-container {
-    width: 1200px;
-    margin: 0 auto;
+   width: 1200px;
+   margin: 0 auto;
   }
 
   .h1-text {
-    display: block;
-    margin: 0 auto;
-    padding-top: 51px;
+   display: block;
+   margin: 0 auto;
+   padding-top: 51px;
   }
 
   .welcome-slogan {
@@ -245,38 +245,159 @@
    display: flex;
    margin-top: 45px;
    margin-left: -15px;
-
   }
 
   .catalog-filter-group {
-     border:0;
+   margin: 0;
+   padding: 0;
+   border: none;
+  }
+
+  .catalog-filter-group:first-child {
+   padding-right: 70px;
   }
 
   .catalog-filter-item {
-     font-weight: 400;
-     font-size: 18px;
-     line-height: 23.31px;
-     color: white;
-     padding-bottom: 13px;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 23.31px;
+   color: white;
+   padding-bottom: 13px;
   }
 
  .catalog-button {
-     display: flex;
-     flex-direction: column;
-     justify-content: flex-end;
-     margin-left: 590px;
-     border:0;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   margin-left: 80px;
+   border:0;
  }
 
   .catalog-sorting {
    font-weight: 700;
    font-style: normal;
    font-size: 30px;
-   line-height: 38.85px;
+   line-height: 39px;
    text-transform: uppercase;
    margin-top: 50px;
    padding-right: 192px;
   }
+
+  .control {
+   position: relative;
+   display: block;
+   padding-left: 35px;
+  }
+
+  .control-mark {
+   position: absolute;
+   left: 0;
+   width: 20px;
+   height: 20px;
+   background-color: white;
+   border-radius: 4px;
+  }
+
+  .checked-icon {
+   padding-left: 4px;
+   padding-bottom: 3px;
+  }
+
+  .control-input[type="radio"] + .control-mark {
+   border-radius: 50%;
+  }
+
+  .control-input[type="radio"]:checked + .control-mark::before {
+   position: absolute;
+   top: 6px;
+   left: 6px;
+   width: 8px;
+   height: 8px;
+   background-color: #3F5E72;
+   border-radius: 50%;
+   content: "";
+  }
+
+  .catalog-filter-range {
+   margin-left: 216px;
+  }
+
+  .range-scale {
+   position: relative;
+   height: 4px;
+   margin-bottom: 16px;
+   background-color: #FFFFFF;
+   opacity: 30%;
+   margin-left: 10px;
+   margin-top: 40px;
+   width: 287px;
+  }
+
+  .range-bar {
+   position: absolute;
+   height: 4px;
+   background-color: #FFFFFF;
+   width: 227px;
+  }
+
+  .range-toggle {
+   position: absolute;
+   width: 20px;
+   height: 20px;
+   background: white;
+   border: 1px solid white;
+   border-radius: 4px;
+   cursor: pointer;
+  }
+
+  .rang-toggle:focus {
+   border:3px solid rgba(131, 179, 211, 1);
+   border-radius: 5px;
+  }
+
+  .rang-toggle:active {
+   border:2px solid rgba(131, 179, 211, 1);
+   border-radius: 5px;
+  }
+
+  .toggle-min {
+   top: -8px;
+   left: -10px;
+  }
+
+  .toggle-max {
+   top: -8px;
+   right: -10px;
+  }
+
+  .range-wrapper-inputs {
+   display: flex;
+   justify-content: center;
+  }
+
+  .catalog-filter-label {
+   display: flex;
+   flex-direction:row-reverse;
+   border: 2px solid white;
+   width: 143px;
+   height: 48px;
+  }
+
+  .range-input {
+    width: 150px;
+    padding: 0 2px;
+    color: white;
+    font: inherit;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+  }
+
+  .range-input::-webkit-outer-spin-button,
+  .range-input::-webkit-inner-spin-button {
+   appearance: none;
+   margin: 0;
+}
 
   .hotel-card-link {
    text-decoration: none;
@@ -385,6 +506,66 @@
    background-color: rgba(131, 179, 211, 1);
    text-decoration: none;
    text-transform: uppercase;
+   padding: 21px;
+   padding-bottom: 19px;
+   border: none;
+   cursor: pointer;
+   margin-left:-15px;
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+  }
+
+  .field {
+   margin: 0;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   padding-left: 22px;
+   font: inherit;
+   width: 600px;
+   border-radius: 10px;
+   outline: white;
+   border: white;
+  }
+
+  .field:hover {
+   background-color: #E6E6E6;
+  }
+
+  .field:focus {
+   background-color: #E6E6E6;
+   border: 3px solid rgba(131, 179, 211, 1);
+  }
+
+  .field-catalog {
+   margin: 0;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   padding-left: 22px;
+   font: inherit;
+   width: 600px;
+   border-radius: 10px;
+   outline: white;
+   border: white;
+   background-color: #F2F2F2;
+  }
+
+  .field-catalog:hover {
+   background-color: #E6E6E6;
+  }
+
+  .field-catalog:focus {
+   background-color: #E6E6E6;
+   border: 3px solid rgba(131, 179, 211, 1);
+  }
+
+  .newsletter-button:hover {
+   background-color: #68A2CA;
+  }
+
+  .newletter-button:focus {
+   background-color: #68A2CA;
+   border: 3px solid #756257;
+   border-radius: 4px;
   }
 
   .page-footer-container {
@@ -394,15 +575,14 @@
   }
 
   .footer-social {
-    margin-left: 72px;
-    max-width: 720px;
+   margin-left: 72px;
+   max-width: 720px;
   }
 
   .footer-social-list {
    display: flex;
    flex-wrap: wrap;
    margin-top: 49px;
-
   }
 
   .footer-social-item {
@@ -445,7 +625,187 @@
    margin-top: 45px;
   }
 
-   .inner-header {
+  .modal-container {
+   position: fixed;
+   top: 0;
+   left: 0;
+   display: flex;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(242, 242, 242, 0.8);
+  }
+
+  .modal-container-close {
+   display: none;
+  }
+
+  .modal {
+   position: relative;
+   margin: auto;
+   padding: 60px;
+   background-color:rgba(255, 255, 255, 1);
+   border-radius: 30px;
+  }
+
+  .modal-auth {
+   width: 575px;
+  }
+
+  .modal-close-button {
+   position: absolute;
+   padding: 0;
+   top: 54px;
+   right: 60px;
+   width: 53px;
+   height: 53px;
+   background-color: rgba(242, 242, 242, 1);
+   border:none;
+   border-radius: 50%;
+   background-image: url("../images/modal-close.svg");
+   background-repeat: no-repeat;
+   background-position: center;
+   cursor: pointer;
+  }
+
+  .modal-title {
+   margin: 0;
+   margin-bottom: 32px;
+   font-family: "PT Sans";
+   font-size: 30px;
+   line-height: 40px;
+   font-weight: 700;
+   color: #000000;
+   text-transform: uppercase;
+  }
+
+  .field-group {
+   display: flex;
+   font-weight: 700;
+   font-family: "PT Sans";
+   font-size: 18px;
+   margin: 0;
+   padding-bottom: 10px;
+  }
+
+  .auto-form {
+   margin-top: 60px;
+  }
+
+  .auto-form-field {
+   width: 420px;
+   height: 50px;
+   font-weight: 700;
+   font-family: "PT Sans";
+   font-size: 18px;
+   margin: 0;
+   background-color: rgba(242, 242, 242, 1);
+   border: none;
+   border-radius: 4px;
+   position: absolute;
+   right: 60px;
+   padding-left: 19px;
+  }
+
+  .field-group-title {
+    margin-right: 40px;
+    margin-top: 15px;
+  }
+
+  .auto-form-persons {
+   width: 133px;
+   height: 50px;
+   font-weight: 700;
+   font-family: "PT Sans";
+   font-size: 18px;
+   margin: 15px;
+   background-color: rgba(242, 242, 242, 1);
+   border: none;
+   border-radius: 4px;
+   text-align: center;
+  }
+
+  .field-group-wrapper {
+   display: flex;
+  }
+
+  .auto-form-button {
+   width: 570px;
+   height: 60px;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 40px;
+   color: white;
+   text-transform: uppercase;
+   background-color:rgba(131, 179, 211, 1);
+   border: none;
+   border-radius: 10px;
+   cursor: pointer;
+  }
+
+  .auto-form-button:hover {
+   background-color:rgba(104, 162, 202, 1);
+  }
+
+  .auto-form-button:focus {
+   background-color:rgba(104, 162, 202, 1);
+   border: 3px solid rgba(117, 98, 87, 1);
+   border-radius: 10px;
+  }
+
+  .message-error {
+   font-weight: 400px;
+   font-size: 16px;
+   color: rgba(255, 87, 87, 1);
+   padding-left: 135px;
+  }
+
+  .message-correct {
+   font-weight: 400px;
+   font-size: 16px;
+   color: rgba(51, 51, 51, 1);
+   padding-left: 135px;
+  }
+
+  .tooltip {
+   position: absolute;
+  }
+
+  .tooltip-toggle {
+   width: 25px;
+   height: 25px;
+   border: none;
+   background-color: rgba(131, 179, 211, 1);
+   border-radius: 50%;
+   padding: 0;
+   margin: 0;
+   display: block;
+  }
+
+  .tooltip-toggle:hover {
+   background-color: rgba(104, 162, 202, 1);
+  }
+
+  .tooltip-text {
+   background-color: rgba(51, 51, 51, 1);
+   color: #ffffff;
+   font-size: 16px;
+   line-height: 20px;
+   font-weight: normal;
+   text-transform: none;
+   padding: 15px 20px;
+   border-radius: 10px;
+   display: block;
+   width: 216px;
+   z-index: 1;
+   display: none;
+  }
+
+  .tooltip-toggle:hover + .tooltip-text,
+  .tooltip-toggle:focus + .tooltip-text {
+    display: block;
+  }
+
+  .inner-header {
    color: white;
    background-image: url("../images/catalog-header-background.jpg");
    background-size: 100% auto;
@@ -458,7 +818,7 @@
    height: 408px;
   }
 
-   .inner-header-title {
+  .inner-header-title {
    font-weight: 700;
    font-size: 60px;
    line-height: 26px;
@@ -487,13 +847,13 @@
   }
 
   .button-submit:hover {
-    background-color: #68A2CA;
+   background-color: #68A2CA;
   }
 
   .button-submit:focus {
-    border: 3px solid #FFFFFF;
-    color: white;
-    background-color: #68A2CA;
+   border: 3px solid #FFFFFF;
+   color: white;
+   background-color: #68A2CA;
  }
 
   .button-header {
@@ -514,15 +874,27 @@
    cursor: pointer;
   }
 
+  .button-reset:hover {
+   opacity: 60%;
+  }
+
+  .button-reset:focus {
+    border: 3px solid #83B3D3;
+    border-radius: 4px;
+  }
+
   .select-control {
     width: 287px;
     height: 48px;
     margin-top: 44px;
     border: 2px solid #E6E6E6;
     border-radius: 4px;
-    padding-top: 12px;
-    padding-bottom: 12px;
     padding-left: 13px;
+    font: inherit;
+    background-image: url("../images/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    appearance: none;
   }
 
   .sorting-field {
@@ -530,23 +902,27 @@
    flex-wrap: wrap;
    width: 1200px;
    margin-left: 71px;
-   }
+  }
+
+  .card-grid-toggle {
+   text-decoration: none;
+  }
 
   .items-view {
    margin-top: 44px;
    margin-left: 90px;
-   }
+  }
 
   .cards-view, .full-view {
    margin-right: 40px;
-   }
+  }
 
   .cards-view, .full-view, .list-view {
    border: 2px solid #E6E6E6;
    border-radius: 4px;
    padding: 16px 17px;
    margin-right: 8px;
-   }
+  }
 
   .hotels-list {
    display: grid;
@@ -554,26 +930,26 @@
    gap: 10px;
    margin-left: 70px;
    margin-bottom: 34px;
-   }
+  }
 
   .hotel-card {
    margin-right: 10px;
    padding: 20px;
    width: 300px;
-   }
+  }
 
   .hotels-details {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    margin-bottom: 16px;
+   display: flex;
+   align-items: baseline;
+   justify-content: space-between;
+   margin-bottom: 16px;
   }
 
   .button-favourite {
    padding: 9px 15px 9px 15px;
    border-radius: 4px;
    margin-left: 26px;
-   }
+  }
   .pagination-container {
    display: flex;
    padding: 16px;
@@ -608,14 +984,13 @@
   }
 
   .pagintaion-link:hover {
-    background-color:#68A2CA;
+   background-color:#68A2CA;
   }
 
   .pagintaion-link:focus {
    border: 3px solid #756257;
    background-color:#68A2CA;
   }
-
 
   .pagination-current {
    color: #242424;
